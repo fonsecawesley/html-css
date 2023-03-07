@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 0px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+        col.cnome {
+            background-color: pink; 
+        }
+        div#container {
+            overflow: auto;
+            width: 70vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti id ea commodi ipsam ipsa totam modi vel amet iure sequi. Facere corporis placeat dolorum, dolorem odio quibusdam accusamus harum cupiditate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda nemo commodi fugiat nihil necessitatibus eos voluptates ipsa, obcaecati totam deleniti dignissimos sunt doloribus tenetur iste. Soluta veritatis unde corporis nobis!</p>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+                <col class="cloc">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+                <th scope="col">Local</th>
+            </tr>
+            <tr>
+                <td>Ana </td>
+                <td>F</td>
+                <td>20</td>
+                <td>Jornalista</td>
+                <td>Curitiba</td>
+            </tr>
+            <tr>
+                <td>Ana </td>
+                <td>F</td>
+                <td>20</td>
+                <td>Jornalista</td>
+                <td>Belo Horizonte</td>
+            </tr>
+            <tr>
+                <td class="destaque">Brenna </td>
+                <td>F</td>
+                <td>20</td>
+                <td>contadora</td>
+                <td>Meu coraçãp</td>
+            </tr>
+            <tr>
+                <td class="destaque">Wesley </td>
+                <td>M</td>
+                <td>23</td>
+                <td>Desenvolvedor</td>
+                <td>Coração dela</td>
+            </tr>
+            <tr>
+                <td>Rodolfo </td>
+                <td>M</td>
+                <td>22</td>
+                <td>Developer</td>
+                <td>São Paulo</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela nova</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray ;
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: lightgray;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tabelas grandes</h1>
+    <!-- ANATOMIA PARA TABELAS GRANDE 
+        TABLE
+            CAPTION
+            HEAD
+                TR,TD,TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidas Federativas</caption>
+        <thead>
+            <tr>    
+                <th>Estado</th>
+                <th style="width: 75px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.024.937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>83.373.123</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad facilis explicabo autem veritatis accusamus vero, deserunt at, totam, nesciunt omnis assumenda repudiandae magnam et hic optio delectus ex quod qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cumque illum asperiores saepe, doloribus quia beatae suscipit, ab ratione excepturi veniam natus soluta modi. Aliquid unde commodi expedita culpa ratione? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sequi optio ullam quos repudiandae impedit nemo odit nesciunt inventore! Eum explicabo ducimus accusamus, sit quibusdam nobis commodi ad consequatur recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam laboriosam iste. Animi ipsam qui laboriosam impedit necessitatibus! Eligendi numquam quas doloremque officia reprehenderit est ratione? Ad fugit totam tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, aliquam. Architecto dicta recusandae, blanditiis, asperiores incidunt harum natus itaque repellat molestias qui veritatis magnam nam perferendis earum officiis saepe error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quibusdam iure quia quos nostrum veritatis! Ratione, exercitationem consequatur cumque eius explicabo corrupti ea quo perferendis veritatis, ad et itaque illum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, qui dignissimos earum corporis neque ipsum. Culpa tenetur fuga ratione recusandae dolore atque ex, laboriosam, itaque, corporis aliquam delectus illo consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id eveniet quidem, pariatur fugiat dolore nam consequuntur odio esse facilis. Facilis, provident! Pariatur, quia obcaecati? Illum totam tenetur unde sit incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eligendi. Nulla, numquam sequi. Quam facilis nisi doloremque, aspernatur modi consectetur obcaecati quisquam officia, possimus cupiditate id ipsum maiores libero delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eligendi debitis velit reprehenderit tempora optio assumenda ex explicabo quidem inventore eaque porro perspiciatis! Quia natus fugiat ex ipsam suscipit quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem veniam magnam delectus consequuntur illo, eligendi, tenetur sapiente laudantium quae repudiandae, odio eos at architecto! Soluta, ex veritatis? Totam, dolore officiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur error officiis corrupti. Ea neque nostrum, animi culpa recusandae eum tenetur accusamus, odio magni tempore quos doloremque perferendis nam incidunt et. </p>
+</body>
+</html>
